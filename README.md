@@ -50,7 +50,7 @@ See [SAFETY.md](SAFETY.md) for the full scope, safety principles and crisis appr
 | Privacy approach | Not started |
 | Safety test scenarios | [Draft](docs/evaluation/test-scenarios.md) |
 | Baseline test (general AI, no instructions) | [Done](docs/evaluation/results/2026-11-16-chatgpt-free-baseline.md) |
-| System prompt | [Draft v0.2](prompts/system-prompt.md); v0.1 [tested](docs/evaluation/results/2026-11-16-chatgpt-free-prompt-v0.1.md) |
+| System prompt | [Draft v0.3](prompts/system-prompt.md); v0.1 and v0.2 [tested](docs/evaluation/results/) |
 | Prototype | Not started |
 | License | MIT |
 
