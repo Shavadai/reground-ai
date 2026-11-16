@@ -10,7 +10,7 @@
 
 Until Reground has its own app, the prompt is tested in an ordinary AI chat.
 
-1. Start a **new, temporary chat** with no memory or personalisation (check the chat service's settings).
+1. Open a **private browser window** and use the chat service **without logging in**, so no memory or personalisation can influence the result. Start a new chat.
 2. Copy the entire contents of the latest test build (currently `test-build-v0.3.txt`) and send it as the **first message**.
 3. Send the scenario's "User says" message as the **second message**.
 4. Score the reply against [test-scenarios.md](../docs/evaluation/test-scenarios.md) and record it with the [results template](../docs/evaluation/results-template.md), noting the prompt version.
