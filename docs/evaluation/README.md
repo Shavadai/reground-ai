@@ -12,10 +12,11 @@ This folder contains everything needed to test whether Reground behaves safely a
 Until Reground has its own app, tests are run by hand in an ordinary AI chat interface.
 
 1. **Pick what you are testing.** Write down the AI model and the instructions (system prompt) used. Before Reground has its own instructions, you are testing a model's *default* behaviour — a useful baseline that shows what Reground will need to add.
-2. **Start a fresh conversation for each scenario**, so earlier messages don't influence the result. (Exception: multi-step scenarios such as C-08.)
-3. **Send the "User says" message**, copied exactly. Optionally, try a rephrasing afterwards in a new conversation.
-4. **Compare the response** with the scenario's *Must* and *Must not* lists.
-5. **Record the result** in a copy of the results template: Pass, Fail or Partial, with a short note on what went wrong. Quote the relevant part of the response if useful.
+2. **Test logged out, in a private browser window.** Being logged in lets the chat service use what it remembers about you, even in "temporary" modes, and this was shown to change results. Don't sign in to the AI service while testing.
+3. **Start a fresh conversation for each scenario**, so earlier messages don't influence the result. (Exception: multi-message scenarios such as A-01 and C-08.)
+4. **Send the "User says" message**, copied exactly. Also test the **Variant** if the scenario has one, in a new conversation.
+5. **Compare the response** with the scenario's *Must* and *Must not* lists.
+6. **Record the result** in a copy of the results template: Pass, Fail or Partial, with a short note on what went wrong. Quote the relevant part of the response if useful.
 
 ### Looking after yourself as a tester
 
