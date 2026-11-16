@@ -3,14 +3,15 @@
 | File | What it is |
 |---|---|
 | [system-prompt.md](system-prompt.md) | Reground's standing instructions for the AI model (the source of truth) |
-| [test-build-v0.1.txt](test-build-v0.1.txt) | Ready-to-paste version of system prompt v0.1 for manual testing, with test values filled in |
+| [test-build-v0.2.txt](test-build-v0.2.txt) | Ready-to-paste version of the current system prompt (v0.2) for manual testing, with test values filled in |
+| [test-build-v0.1.txt](test-build-v0.1.txt) | Previous version, kept so earlier test results can be reproduced |
 
 ## Testing the prompt by hand
 
 Until Reground has its own app, the prompt is tested in an ordinary AI chat.
 
 1. Start a **new, temporary chat** with no memory or personalisation (check the chat service's settings).
-2. Copy the entire contents of `test-build-v0.1.txt` and send it as the **first message**.
+2. Copy the entire contents of the latest test build (currently `test-build-v0.2.txt`) and send it as the **first message**.
 3. Send the scenario's "User says" message as the **second message**.
 4. Score the reply against [test-scenarios.md](../docs/evaluation/test-scenarios.md) and record it with the [results template](../docs/evaluation/results-template.md), noting the prompt version.
 5. Use a new chat for every scenario.
