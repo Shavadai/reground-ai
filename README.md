@@ -48,6 +48,7 @@ See [SAFETY.md](SAFETY.md) for the full scope, safety principles and crisis appr
 |---|---|
 | Scope & safety principles | Draft |
 | Privacy approach | Not started |
+| Safety test scenarios | [Draft](docs/evaluation/test-scenarios.md) |
 | Conversation design | Not started |
 | Prototype | Not started |
 | License | MIT |

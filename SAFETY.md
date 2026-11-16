@@ -70,8 +70,9 @@ Detection should **err on the side of caution**: a false alarm handled kindly is
 
 - Resources are kept in a **separate, versioned list** per country/region, with a source and a "last verified" date for each entry.
 - The AI model **never generates** phone numbers or services from memory.
-- No region launches without verified resources for that region.
-- Initial focus regions: **to be decided** (likely Belgium and the Netherlands).
+- Reground is **international**, so it will often not know where a user is. In that case it asks which country the user is in, and in the meantime refers to "your local emergency number" without guessing.
+- If no verified resource exists for a user's country, Reground says so honestly and points to local emergency services. It never fills the gap with a guess.
+- The verified list grows country by country. Which countries are covered first is still to be decided (see section 6).
 
 ### 4.4 What crisis mode does not do
 
@@ -101,7 +102,7 @@ These need decisions — ideally with input from mental health professionals and
 1. **Professional review:** who can review this document, and how?
 2. **Minors:** how to respond if someone indicates they are under 18?
 3. **Crisis detection:** keyword rules, a classifier, the AI model itself, or a combination? How do we test it?
-4. **First regions and languages** for launch and crisis resources.
+4. **Languages and first countries:** Reground is international and English-first. Which other languages are supported, and which countries get verified crisis resources first?
 5. **AI model choice:** hosted provider vs. locally-run open model — trade-offs for privacy, quality and cost.
 6. **Memory:** should Reground remember past conversations? Helpful for continuity, but a privacy risk.
-7. **Evaluation:** how do we test that Reground stays within scope (e.g. a set of test conversations it must handle safely)?
+7. **Evaluation:** a first set of test scenarios exists in [docs/evaluation/test-scenarios.md](docs/evaluation/test-scenarios.md). Still open: how to run them (manually or automatically) and who reviews the results.
